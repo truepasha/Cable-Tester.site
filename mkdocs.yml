@@ -66,7 +66,7 @@ theme:
         name: Вибрати сторону добра
     features:
       - content.tooltips
-      - navigation.tabs
+      #- navigation.tabs
       - navigation.sections
       - navigation.top
       - toc.follow
