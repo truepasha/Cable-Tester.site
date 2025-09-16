@@ -1,4 +1,4 @@
-# Cable-Tester.site
+# Cable-Tester
 Репозиторій для сайту.
 
-Сам сайт: https://truepasha.github.io/Cable-Tester.site/
+Сам сайт: https://truepasha.github.io/Cable-Tester/
