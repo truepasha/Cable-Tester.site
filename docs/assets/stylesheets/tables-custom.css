@@ -1,0 +1,63 @@
+/* Стиль для заголовків таблиці */
+.md-typeset table:not([class]) th {
+    text-align: center !important;   /* Горизонтальне вирівнювання по центру */
+    vertical-align: middle !important; /* Вертикальне вирівнювання по центру */
+    white-space: nowrap !important;  /* Тримає заголовок в один рядок */
+    padding: 6px 6px;  /* Відступи тексту */
+    min-width: 25px; /* Мінімальна ширина стовпців */
+    font-size: .rem; /* Збільшуємо розмір шрифту для заголовків */
+    border: 1px solid var(--md-typeset-table-color); /* Вертикальні лінії */
+}
+
+/* Стиль для клітинок таблиці */
+.md-typeset table:not([class]) td {
+    padding: 6px 6px; /* Відступи тексту */
+    min-width: 25px; /* Мінімальна ширина стовпців */
+    border: 1px solid var(--md-typeset-table-color); /* Вертикальні лінії */
+    vertical-align: middle !important; /* Вертикальне вирівнювання по центру */
+    word-wrap: break-word; /* Перенос слів */
+    overflow-wrap: break-word; /* Перенос слів на новий рядок */
+    word-break: keep-all; /* Не розривати слова всередині */
+    max-width: 300px; /* Максимальна ширина, щоб не було горизонтальної прокрутки */
+    overflow: hidden; /* Сховати вміст, якщо він не поміщається */
+    text-overflow: ellipsis; /* Додає три крапки, якщо вміст не поміщається */
+}
+
+/* Спільний стиль для всіх комірок таблиці, включаючи заголовки */
+.md-typeset table:not([class]) th, 
+.md-typeset table:not([class]) td {
+    display: table-cell !important;  /* Забезпечуємо, що всі елементи є комірками таблиці */
+}
+
+/* Додаємо легке скруглення кутів таблиці */
+.md-typeset table:not([class]) {
+    border-collapse: separate !important; /* Відокремлюємо межі для скруглення */
+    border-spacing: 0; /* Відсутність проміжків між клітинками */
+    border-radius: 4px; /* Легке скруглення кутів */
+    overflow: hidden; /* Обрізаємо вміст, що виходить за межі */
+}
+
+/* Виділення рядка при кліку */
+.md-typeset table:not([class]) tr.selected {
+    background-color: rgba(255, 255, 0, 0.1) !important; /* Напівпрозорий жовтий */
+}
+
+/* Змінюємо фон заголовків таблиці в білій темі */
+.md-typeset table:not([class]) th {
+    background-color: rgb(220, 220, 220); /* Світло-сірий фон заголовків */
+}
+
+/* Змінюємо фон заголовків таблиці в темній темі */
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+    background-color: rgb(53, 55, 62); /* Темно-сірий фон заголовків */
+}
+
+/* Підсвічування сортування зелений (a-b-c) */
+.md-typeset table:not([class]) th[aria-sort="ascending"] {
+    background-color: rgba(0, 128, 0, 0.3) !important; /* Напівпрозорий зелений */
+}
+
+/* Підсвічування сортування червоний (c-b-a) */
+.md-typeset table:not([class]) th[aria-sort="descending"] {
+    background-color: rgba(255, 0, 0, 0.3) !important; /* Напівпрозорий червоний */
+}

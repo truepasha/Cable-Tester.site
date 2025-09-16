@@ -1,0 +1,7 @@
+/*----------- Кастомізація блоку з датою останнього редагування ---------------*/
+.git-revision-date-localized-plugin {
+	clear: both !important;
+    display: block !important;
+}
+
+
