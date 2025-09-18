@@ -1,1 +1,5 @@
 title: "Логіка тестування"
+
+arrange:
+  - memory-cable-testing.md
+  - cable-testing-by-sample.md
